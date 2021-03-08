@@ -1,0 +1,26 @@
+<div class="mb-3">
+  <label for="new_title" class="form-label">Titolo</label>
+  <input
+    type="text"
+    class="form-control"
+    id="new_title"
+    name="new_title"
+    value="<%= post.title  %> "
+    required
+  />
+</div>
+<div class="mb-3">
+  <label for="new_content" class="form-label">Contenuto</label>
+  <textarea
+    class="form-control"
+    id="new_content"
+    rows="3"
+    name="new_content"
+    required
+  >
+<%= post.content  %> </textarea
+  >
+  <input type="hidden" name="id" value="<%= post.id  %>" />
+</div>
+<a href="/" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Save</button>

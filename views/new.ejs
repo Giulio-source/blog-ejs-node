@@ -1,0 +1,10 @@
+<%- include("./partials/header") %>
+<div class="container">
+  <h1 class="mt-3 mb-3 display-4">Hello :P</h1>
+  <h2 class="display-6 mb-3">Let's create a new article! 💩</h2>
+  <form action="/articles/new" method="POST">
+    <%- include("./partials/form_fields") %>
+  </form>
+</div>
+
+<%- include("./partials/footer") %>
